@@ -1,0 +1,177 @@
+---
+layout: default
+title: Yellowen Developers
+---
+
+{% include hero.html %}
+
+<section class="title step gray-logos">
+  <article>
+    <div>
+      <h2>We love Free Software</h2>
+      <p class="paragraph">
+        "One mind may makes mistakes but millions never."<br />
+        There are lots of great <b>Free Software</b> communities around the world, millions of
+        brilliant minds who develop <b>Free Software</b>. How can we don't trust these large
+        and active communities ?<br>
+
+      </p>
+
+
+    </div>
+
+    <img src="{% asset_path python_gray.svg %}" id="python-logo">
+    <img src="{% asset_path ruby_gray.svg %}" id="ruby-logo">
+    <img src="{% asset_path nodejs_gray.svg %}" id="nodejs-logo">
+    <img src="{% asset_path js_gray.svg %}" id="js-logo">
+    <img src="{% asset_path html_gray.svg %}" id="html-logo">
+    <img src="{% asset_path css_gray.svg %}" id="css-logo">
+    <img src="{% asset_path git_gray.svg %}" id="git-logo">
+    <img src="{% asset_path linux_gray.svg %}" id="linux-logo">
+  </article>
+</section>
+
+
+<section class="step bg-very-light-gray">
+  <article>
+    <div>
+      <h2>News</h2>
+      {% for post in site.posts %}
+      <div class="activity">
+        <div class="activity-text">
+          <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+          <p>{{ post.content }}</p>
+          <span class="date">{{ post.date | date_to_string }}</span>
+        </div>
+      </div>
+
+      {% endfor %}
+
+    </div>
+  </article>
+</section>
+
+
+<section class="step bg-almost-white">
+  <article>
+    <div>
+      <h2>Activities</h2>
+
+      <div class="activity">
+        <div class="avatar">
+          <img src="{{ 'lxsameer@gnu.org' | to_gravatar }}" alt="lxsameer's avatar" />
+        </div>
+        <div class="activity-text">
+          <h4>Some commit</h4>
+          <p>sdf sdfsdf sdfsd fsdfs df</p>
+        </div>
+
+      </div>
+      <div class="activity">
+        <div class="avatar">
+          <img src="{{ 'lxsameer@gnu.org' | to_gravatar }}" alt="lxsameer's avatar" />
+        </div>
+        <div class="activity-text">
+          <h4>Some commit</h4>
+          <p>sdf sdfsdf sdfsd fsdfs df</p>
+        </div>
+
+      </div>
+      <div class="activity">
+        <div class="avatar">
+          <img src="{{ 'lxsameer@gnu.org' | to_gravatar }}" alt="lxsameer's avatar" />
+        </div>
+        <div class="activity-text">
+          <h4>Some commit</h4>
+          <p>sdf sdfsdf sdfsd fsdfs df</p>
+        </div>
+
+      </div>
+
+    </div>
+  </article>
+</section>
+
+
+
+
+
+
+<section class="step center project">
+  <article>
+    <div>
+      {% for project in site.prj %}
+      <div class="bullet three-col-bullet">
+        <div class="bullet-icon bullet-icon-1">
+          {{ project.page.title }}
+
+        </div>
+        <div class="bullet-content">
+          <h2>{{ project['title'] }}</h2>
+          <p>{{ project['short_desc'] }}</p>
+        </div>
+      </div>
+      {% endfor %}
+      <div class="bullets">
+        <div class="bullet three-col-bullet">
+          <div class="bullet-icon bullet-icon-1">
+            <img src="https://raw.github.com/Magnus-G/Random/master/placeholder_logo_2.png" alt="">
+          </div>
+          <div class="bullet-content">
+            <h2>This Bullet Title</h2>
+            <p>Lorem dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
+          </div>
+        </div>
+        <div class="bullet three-col-bullet">
+          <div class="bullet-icon bullet-icon-2">
+            <img src="https://raw.github.com/Magnus-G/Random/master/placeholder_logo_3.png" alt="">
+          </div>
+          <div class="bullet-content">
+            <h2>Another Bullet Title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum.</p>
+          </div>
+        </div>
+        <div class="bullet three-col-bullet">
+          <div class="bullet-icon bullet-icon-3">
+            <img src="https://raw.github.com/Magnus-G/Random/master/placeholder_logo_4.png" alt="">
+          </div>
+          <div class="bullet-content">
+            <h2>Last Bullet Title</h2>
+            <p>Lorem ipsum sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bullets">
+        <div class="bullet three-col-bullet">
+          <div class="bullet-icon bullet-icon-1">
+            <img src="https://raw.github.com/Magnus-G/Random/master/placeholder_logo_2.png" alt="">
+          </div>
+          <div class="bullet-content">
+            <h2>This Bullet Title</h2>
+            <p>Lorem dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
+          </div>
+        </div>
+        <div class="bullet three-col-bullet">
+          <div class="bullet-icon bullet-icon-2">
+            <img src="https://raw.github.com/Magnus-G/Random/master/placeholder_logo_3.png" alt="">
+          </div>
+          <div class="bullet-content">
+            <h2>Another Bullet Title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum.</p>
+          </div>
+        </div>
+        <div class="bullet three-col-bullet">
+          <div class="bullet-icon bullet-icon-3">
+            <img src="https://raw.github.com/Magnus-G/Random/master/placeholder_logo_4.png" alt="">
+          </div>
+          <div class="bullet-content">
+            <h2>Last Bullet Title</h2>
+            <p>Lorem ipsum sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </article>
+</section>

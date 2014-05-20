@@ -1,0 +1,19 @@
+name: Yellowen Developers
+markdown: redcarpet
+highlighter: pygments
+
+source: ./src
+destination: ./build
+
+assets:
+  js_compressor:  uglifier
+  css_compressor: sass
+  cache: true
+  gzip: [ text/css, application/javascript ]
+
+
+projects:
+  faalis:
+    title: Faalis
+    icon: faalis.png
+    short_desc: something

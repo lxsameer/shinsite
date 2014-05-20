@@ -1,0 +1,31 @@
+<header class="navigation">
+  <div class="menu-wrapper">
+    <p class="navigation-menu-button" id="js-mobile-menu">MENU</p>
+    <div class="nav">
+      <ul id="navigation-menu">
+        <li><a href="#">FOSS Fan</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Activities</a></li>
+        <li><a href="#">Projects</a></li>
+
+        <li class="nav-button"><a href="#"><i class="fa fa-github fa-2x"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<script>
+  $(function() {
+    var menu = $('#navigation-menu');
+    var menuToggle = $('#js-mobile-menu');
+
+    $(menuToggle).on('click', function(e) {
+      e.preventDefault();
+      menu.slideToggle(function(){
+        if(menu.is(':hidden')) {
+          menu.removeAttr('style');
+        }
+      });
+    });
+  });
+</script>

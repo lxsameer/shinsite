@@ -1,0 +1,9 @@
+_site
+_sass/.sass-cache/*
+*flymake*
+.sass-cache/*
+.jekyll-assets-cache
+src/.jekyll-assets-cache
+build/
+src/_assets/stylesheets/.sass-cache/
+**/.sass-cache/
