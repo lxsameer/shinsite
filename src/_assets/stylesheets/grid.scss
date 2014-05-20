@@ -12,7 +12,8 @@
 
 aside {
    @include span-columns(3);
-   background-color: #eeeeef;
+   background-color: $side_bg;
+   border-right: 1px solid $side_border_color;
    height: 100%;
    position: fixed;
 }
@@ -21,5 +22,17 @@ section {
    &.content {
       @include span-columns(13);
       @include shift(3);
+      background: red;
+
    }
+}
+
+footer {
+   @include span-columns(13);
+   @include shift(3);
+   background: $light_brown;
+   position: fixed;
+   bottom: 0;
+   @include calc(height, 50px);
+
 }
