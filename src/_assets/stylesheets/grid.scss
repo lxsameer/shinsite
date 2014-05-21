@@ -30,9 +30,14 @@ section {
 footer {
    @include span-columns(13);
    @include shift(3);
-   background: $light_brown;
+   @include calc(padding-right, 10px);
    position: fixed;
    bottom: 0;
-   @include calc(height, 50px);
+   @include calc(height, 30px);
+   font-size: 0.8em;
 
+}
+
+.text-right {
+   text-align: right;
 }
