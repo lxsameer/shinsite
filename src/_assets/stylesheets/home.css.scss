@@ -24,3 +24,22 @@ p {
 .center {
    text-align: center;
 }
+
+aside {
+   header {
+      text-align: center;
+      .avatar {
+         margin-top: 3em;
+         border-radius: 100px;
+      }
+   }
+   nav {
+      margin-top: 3em;
+      ul {
+         list-display: none;
+         li {
+            @include pad(0.3em 1em);
+         }
+      }
+   }
+}
